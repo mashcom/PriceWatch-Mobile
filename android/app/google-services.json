@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "219759569734",
+    "firebase_url": "https://pricewatch263.firebaseio.com",
+    "project_id": "pricewatch263",
+    "storage_bucket": "pricewatch263.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219759569734:android:f8e17f1634f2a9326ed347",
+        "android_client_info": {
+          "package_name": "com.example.pricewatchzw"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219759569734-t40c5isnabovir2vdpcdkoi1hsjphgk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCutI0Bn3bTdfHJmp8z53R2e5Rhe0fFRvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219759569734-t40c5isnabovir2vdpcdkoi1hsjphgk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:219759569734:android:09114e68375035d6",
+        "android_client_info": {
+          "package_name": "learn.mashcom.co.zw.flutter_learn"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "219759569734-t40c5isnabovir2vdpcdkoi1hsjphgk4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCutI0Bn3bTdfHJmp8z53R2e5Rhe0fFRvo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "219759569734-t40c5isnabovir2vdpcdkoi1hsjphgk4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
