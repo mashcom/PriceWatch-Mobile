@@ -3,9 +3,8 @@ import 'product.dart';
 import 'dart:convert';
 import 'scanner_page.dart';
 import 'single_product_page.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
-import 'custom/bottom_nav.dart';
 import 'models/product_model.dart';
+import 'services/http/product.dart';
 
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
@@ -19,7 +18,7 @@ class _MyHomePageState extends State<MyHomePage> {
   TextEditingController editingController = TextEditingController();
   bool _productListReady = false;
 
-  ProductsModel product_model;
+  ProductHttpService product_model;
   List productList = List();
 
   @override
@@ -30,7 +29,7 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 
   void populateProducts() {
-    product_model = ProductsModel();
+    product_model = ProductHttpService();
     product_model.getProducts().then((resp) {
       var result = jsonDecode(resp);
 
@@ -64,7 +63,6 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.all(
                       Radius.circular(10.0),
                     ),
-
                   ),
                 ),
               ),
@@ -96,10 +94,12 @@ class _MyHomePageState extends State<MyHomePage> {
             ),
             Expanded(
               child: _productListReady
-                  ? Column(
-                      children: productList.map((item) {
-                        return productWidget(context, item);
-                      }).toList(),
+                  ? SingleChildScrollView(
+                      child: Column(
+                        children: productList.map((item) {
+                          return productWidget(context, item);
+                        }).toList(),
+                      ),
                     )
                   : Center(
                       child: CircularProgressIndicator(

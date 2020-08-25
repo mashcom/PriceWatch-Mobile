@@ -1,6 +1,6 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
-import 'custom/bottom_nav.dart';
+import 'widgets/bottom_nav.dart';
 
 class BudgetPage extends StatefulWidget {
   BudgetPage({Key key, this.title}) : super(key: key);

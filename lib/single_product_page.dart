@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'product.dart';
-import 'custom/bottom_nav.dart';
+import 'widgets/bottom_nav.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter_money_formatter/flutter_money_formatter.dart';
@@ -32,7 +32,7 @@ class _ProductDetailsPageState extends State<ProductDetailsPage> {
             primary: true,
             floating: true,
             flexibleSpace: productHero(),
-            expandedHeight: 300,
+            expandedHeight: 270,
             pinned: true,
             title:Text(widget.title),
 

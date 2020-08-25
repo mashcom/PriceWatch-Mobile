@@ -21,7 +21,6 @@ class _ScannerPageState extends State<ScannerPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
     _scan();
   }
@@ -55,7 +54,6 @@ class _ScannerPageState extends State<ScannerPage> {
     productModel.getSingleProduct(barcode).then((response) {
       var product = jsonDecode(response);
       print(product["data"]);
-
       if (product["data"] != null) {
         print("result");
         var product_details = product["data"];
@@ -69,7 +67,6 @@ class _ScannerPageState extends State<ScannerPage> {
           ),
         );
       } else {
-
         Scaffold.of(context)
             .showSnackBar(SnackBar(content: Text("Product $barcode")));
         print("product not found");

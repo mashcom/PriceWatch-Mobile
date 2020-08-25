@@ -127,7 +127,7 @@ class ProductsModel {
     return response.body;
   }
 
-  Future isProductLocallySaved(String barCode) async{
+  Future getSingleProductFromDb(String barCode) async{
     var dbClient = await db_con;
 
     var product = await dbClient.rawQuery(
@@ -135,6 +135,7 @@ class ProductsModel {
     );
     print("check existence");
     print(product);
+    return product;
   }
 
   Future addToWatchList(product) async {

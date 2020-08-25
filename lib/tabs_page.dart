@@ -23,7 +23,7 @@ class TabsPage extends StatelessWidget {
         child: Scaffold(
           appBar: AppBar(
             bottom: TabBar(
-
+            indicatorColor: Colors.white,
               tabs: [
                 Tab(
                   icon: Icon(Icons.fastfood),
